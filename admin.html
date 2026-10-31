@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KD Connect|Admin Dashboard</title>
+     <link rel="stylesheet" href="admin.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css"/>
+</head>
+<body>
+    <aside class="sidebar">
+        <div class="admin-logo">
+            KD Connect
+        </div>
+        <nav class="sidebar-nav">
+            <a href="#">Pending</a>
+            <a href="#">Approved</a>
+            <a href="#">Back to Site</a>
+        </nav>
+
+        <div class="admin-logout">
+            <a href="#">Logout</a>
+        </div>
+
+    </aside>
+
+    <main class="admin-main">
+        <h1>Admin Dashboard</h1>
+        <p>Manage and review submitted opportunities</p>
+
+        <section class="dash-stat">
+            <div class="stat-card">
+                <h3>Total Opportunities</h3>
+                <p id="total-count">0</p>
+            </div>
+
+             <div class="stat-card">
+                <h3>Pending</h3>
+                <p id="pending-count">0</p>
+            </div>
+
+             <div class="stat-card">
+                <h3>Approved</h3>
+                <p id="approved-count">0</p>
+            </div>
+
+            <div class="stat-card">
+                <h3>Rejected</h3>
+                <p id="rejected-count">0</p>
+            </div>
+
+
+        </section>
+        <section >
+            <h3>Pending submissions</h3>
+
+            <div id="pending-list" ></div>
+        </section>
+
+
+    </main>
+     <script src="admin.js"></script>
+</body>
+</html>

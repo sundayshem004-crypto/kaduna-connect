@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KD Connect| opportunities</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css"/>
+
+</head>
+<body>
+    <header>
+        <nav class="navbar" aria-label="main navigation">
+            <a href="home.html" class="logo">
+                <span class="logo-letter">KD</span>
+                <span class="logo-text">Connect</span>
+              </a>
+            <div class="nav-links">
+                <a href="home.html" class="nav-link">Home</a>
+                <a href="opportunities.html" class="nav-link">Opportunities</a>
+                <a href="#" class="nav-link">How-it-work</a>
+                <a href="post opportunity.html" class="login-btn">Post-an-opportunity</a>
+            </div>
+
+            <div class="nav-action">
+                <a href="login.html" class="login-btn">login</a>
+                 <button class="menu-toggle" type="button" aria-label="Open navigation menu">
+                <i class="fa-solid fa-bars" id="menu-btn"></i>
+            </button>
+                
+            </div>
+
+        </nav>
+    </header>
+    <section class="oppportunities-hero">
+        <h1>Find Opportunities That Move You Forward</h1>
+        <p>Explore jobs, scholarships, training programmes and more. Your next 
+            opportunity could be closer than you think.
+        </p>
+    </section>
+    <section>
+    <div class="category-section">
+        <div id="drop-down">
+            <p>Select your Category</p>
+            <select id="opp-category">
+                <option value="all">All Opportunities</option>
+                 <option value="jobs">Jobs</option>
+                  <option value="scholarships">Scholarships</option>
+                   <option value="training">Training</option>
+                   <option value="businesses">Businesses</option>
+                   <option value="announcements">Announcements</option>
+                   
+            </select>
+        </div>
+
+        <div class="search-section">
+            <input type="text" id="opportunity-keyword" placeholder="search opportunities">
+            <button id="search-btn">Submit</button>
+        </div>
+        <p id="filter-message"></p>
+
+    </div>
+        
+    </section>
+    <section class="opportunities-container">
+        <h2>Available Opportunities</h2>
+        <p id="loading-message"></p>
+        <div id="opportunities-list">
+
+        </div>
+        <button id="load-more-btn">Load More Jobs</button>
+        <p id="error-message"></p>
+
+
+    </section>
+
+
+    <script src="script.js"></script>
+</body>
+</html>

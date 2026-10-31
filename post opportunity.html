@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Post an opportunity</title>
+     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css"/>
+
+</head>
+<body>
+    <header>
+        <nav class="navbar" aria-label="main navigation">
+            <a href="home.html" class="logo">
+                <span class="logo-letter">KD</span>
+                <span class="logo-text">Connect</span>
+              </a>
+            <div class="nav-links">
+                <a href="home.html" class="nav-link">Home</a>
+                <a href="opportunities.html" class="nav-link">Opportunities</a>
+                <a href="#" class="nav-link">How-it-work</a>
+                <a href="post opportunity.html" class="login-btn">Post-an-opportunity</a>
+            </div>
+
+            <div class="nav-action">
+                <a href="login.html" class="login-btn">login</a>
+                 <button class="menu-toggle" type="button" aria-label="Open navigation menu">
+                <i class="fa-solid fa-bars" id="menu-btn"></i>
+            </button>
+                
+            </div>
+
+        </nav>
+    </header>
+    <main class="Post-opportunity">
+        <section class="post-intro">
+            <h1>Share an Opportunity</h1>
+            <p>Help someone take their next step. Share a job, Scholarship, training programme, business opportunity or public announcement.</p>
+            <form id="opportunity-form">
+                <div class="form-group">
+                    <label for="opportunity-title">Opportunity Title:</label>
+                    <input type="text" id="opportunity-title" name="title" placeholder="e.g Frontend developer">
+
+                </div>
+
+                <div class=" form-group">
+                    <label for="opportunity-category">Select a Category:</label>
+                    <select id="opportunity-category" name="category" required>
+                        <option value="selected disabled"> Select a Category</option>
+                         <option value="jobs"> Jobs</option>
+                          <option value="scholarships"> Scholarships</option>
+                           <option value="training"> Training</option>
+                           <option value="businesses"> Businesses</option>
+                             <option value="announcements"> Announcements</option>
+                    </select>
+
+                </div>
+
+                <div class="form-group">
+                    <label for="organization">Organization/Business name:</label>
+                    <input type="text" id="organization" placeholder="Enter organization name" required>
+
+                </div>
+
+                <div class="form-group">
+                    <label for="opportunity-location">Loaction:</label>
+                    <input type="text" id="opportunity-location" name="location" placeholder="e.g kaduna/abuja, or remote" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="opportunity-description">Description:</label>
+                    <textarea id="opportunity-description" name="description" rows="3" cols="16" placeholder="short description of the opportunity" required></textarea> 
+
+                </div>
+
+                <div class="form-group">
+                    <label for="application-link">Application Link/Contact</label>
+                    <input type="text" id="application-link" placeholder="link or contact details">
+
+                </div>
+
+                <button class="opp-btn" type="submit">
+                    <i class="fa-solid fa-paper-plane" ></i>
+                    Submit
+                </button>
+
+                <p id="form-message" role="status" aria-live="polite"></p>
+
+            </form>
+
+        </section>
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
